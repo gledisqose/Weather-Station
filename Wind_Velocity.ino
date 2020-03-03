@@ -45,8 +45,8 @@ void loop() {
   Serial.print("\nRPM :");
   Serial.print(rpm);
 
-  int v; //shpejtesia(velocity)
-  int pi = 3.14159; //konstantja pi
+  float v; //shpejtesia(velocity)
+  float pi = 3.14159; //konstantja pi
   int D = 3; //diametri
   
   v = pi * D * rpm * 0.0166666667; //shpejtesia e levizjes se helikave => shpejtesia e eres
