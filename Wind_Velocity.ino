@@ -1,11 +1,11 @@
 int sensor = 2;
-int t;
-int state;
-int signal1;
-int signal2;
+int t; //Koha
+int state; //Gjendja e sensorit HIGH apo LOW
 int lastSensorState = 0;
-float T;
-float f;
+int signal1; 
+int signal2;
+float T; //Perioda
+float f; //Frekuenca
 void setup() {
 Serial.begin(9600);
 pinMode(sensor, INPUT);
@@ -26,7 +26,9 @@ void loop() {
       signal2 = t;
       }  
     }
-  lastSensorState = state;
+  lastSensorState = state; 
+  //Kthen lastSensorState ne gjendjen e meparshme, kjo sherben qe nese sensori ndodhet ne te 
+  //njejtin pozicion me magnetin do te thote se helikat nuk po levizin pra nuk po fryn ere dhe shpejtesia eshte 0 m/s
   
   //Serial.print("\nSignal 1 :");
   //Serial.print(signal1);
